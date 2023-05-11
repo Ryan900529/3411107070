@@ -23,6 +23,15 @@
         *{font-family: 標楷體;}
         /*屬性選擇器*/
         input[type=button]{background-color: green;}
+
+        /*後代選擇器(使用空格符號)*/
+        .test1 a{
+            color: green;
+        }
+        /*子選擇器(使用>符號)*/
+        .test2>a{
+            color: red;
+        }
          /*後代選擇器(使用空格符號)*/
          .test1 a{
             color: green;
@@ -50,7 +59,6 @@
         ul li,ol li{
             color: blue;
         }
-
     </style>
 </head>
 <body>
@@ -66,6 +74,16 @@
     <hr>
     <h2>屬性選擇器</h2>
     <input type="button" value="屬性選擇器">
+    <hr>
+    <h2>後代選擇器(使用空格符號)</h2>
+    <div class="test1">
+        <a href="#">div-a</a>
+    </div>
+    <hr>
+    <h2>子選擇器(使用>符號)</h2>
+    <div class="test2">
+        <a href="#">div-a</a>
+    </div>
     <h2>後代選擇器(使用空格符號)</h2>
     <div class="test1">
         <p>
